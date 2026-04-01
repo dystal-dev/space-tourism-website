@@ -1,10 +1,105 @@
 @import "tailwindcss";
 
 @font-face {
+  font-family: "Bellefair";
+  src: url("/fonts/Bellefair-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BarlowCondensed";
+  src: url("/fonts/BarlowCondensed-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 
 @theme {
+  --app-max-width: 1440px;
+
+  --font-bellefair: "Bellefair", serif;
+  --font-barlow: "Barlow", sans-serif;
+  --font-barlow-condensed: "BarlowCondensed", sans-serif;
+
+  --color-blue-900: rgb(11, 13, 23);
+  --color-blue-300: rgb(208, 214, 249);
+  --color-white: rgb(255, 255, 255);
+
+  --spacing-25: 2px;
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+  --spacing-1200: 96px;
+  --spacing-1600: 128px;
 }
 
 @layer base {
+  .text-preset-1 {
+    font-family: var(--font-bellefair);
+    font-size: 9rem;
+    line-height: 171.9%;
+    letter-spacing: 0;
+  }
+
+  .text-preset-2 {
+    font-family: var(--font-bellefair);
+    font-size: 3.5rem;
+    line-height: 64.2%;
+    letter-spacing: 0;
+  }
+
+  .text-preset-3 {
+    font-family: var(--font-bellefair);
+    font-size: 3.5rem;
+    line-height: 64.2%;
+    letter-spacing: 0;
+  }
+
+  .text-preset-4 {
+    font-family: var(--font-bellefair);
+    font-size: 2rem;
+    line-height: 36.7%;
+    letter-spacing: 0;
+  }
+  .text-preset-5 {
+    font-family: var(--font-barlow-condensed);
+    font-size: 1.75rem;
+    line-height: 33.6%;
+    letter-spacing: 0.25rem;
+  }
+  .text-preset-6 {
+    font-family: var(--font-bellefair);
+    font-size: 1.75rem;
+    line-height: 32.1%;
+    letter-spacing: 0;
+  }
+  .text-preset-7 {
+    font-family: var(--font-barlow-condensed);
+    font-size: 0.875rem;
+    line-height: 16.8%;
+    letter-spacing: 0.125rem;
+  }
+  .text-preset-8 {
+    font-family: var(--font-barlow-condensed);
+    font-size: 1rem;
+    line-height: 19.2%;
+    letter-spacing: 0.125rem;
+  }
+  .text-preset-9 {
+    font-family: var(--font-barlow);
+    font-size: 1.125rem;
+    line-height: 180%;
+    letter-spacing: 0;
+  }
 }
