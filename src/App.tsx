@@ -5,20 +5,27 @@ import Destination from "./components/Destination";
 import Crew from "./components/Crew";
 import Technology from "./components/Technology";
 import Navigation from "./components/Navigation";
+import homeBg from "./assets/home/background-home-desktop.jpg";
+import destinationBg from "./assets/destination/background-destination-desktop.jpg";
+import crewBg from "./assets/crew/background-crew-desktop.jpg";
+import technologyBg from "./assets/technology/background-technology-desktop.jpg";
+
+const backgrounds: Record<string, string> = {
+  "/": homeBg,
+  "/destination": destinationBg,
+  "/crew": crewBg,
+  "/technology": technologyBg,
+};
 
 function App() {
   const location = useLocation();
 
-  const backgrounds: Record<string, string> = {
-    "/": "bg-[image:var(--bg-home)]",
-    "/destination": "bg-[image:var(--bg-destination)]",
-    "/crew": "bg-[image:var(--bg-crew)]",
-    "/technology": "bg-[image:var(--bg-technology)]",
-  };
+  const bg = backgrounds[location.pathname];
 
   return (
     <div
-      className={`${backgrounds[location.pathname]} bg-cover bg-center min-h-screen`}
+      className="min-h-screen bg-cover bg-center"
+      style={{ backgroundImage: `url(${bg})` }}
     >
       <Navigation />
       <Routes>
