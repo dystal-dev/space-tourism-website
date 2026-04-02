@@ -43,6 +43,8 @@
   --spacing-1000: 80px;
   --spacing-1200: 96px;
   --spacing-1600: 128px;
+
+  --hover-explore-button: 88px solid rgba(255, 255, 255, 0.1);
 }
 
 @layer base {
