@@ -8,7 +8,7 @@ export default function Navigation() {
         <img src={Logo} alt="Logo" />
         <div className="w-full h-px bg-white opacity-25"></div>
       </div>
-      <div className="flex w-full justify-end bg-white/5 backdrop-blur-[80px] gap-600 pr-800">
+      <div className="flex w-full justify-end bg-white/5 backdrop-blur-[80px] gap-600 px-800">
         <Link
           to="/"
           className="h-1200 inline-flex items-center text-preset-8 gap-150 border-b-3 border-white"
