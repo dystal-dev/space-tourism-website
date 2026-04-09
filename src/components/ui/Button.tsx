@@ -4,6 +4,8 @@ const buttonVariants = {
   primary:
     "inline-flex text-preset-8 gap-150 border-b-3 uppercase border-white/0 hover:border-white/50",
   dotIndicator: "w-[15px] h-[15px] rounded-full bg-white/17 hover:bg-white/50",
+  numberIndicator:
+    "flex items-center justify-center text-preset-4 text-white h-1000 w-1000 rounded-full border-1 border-white/25 hover:border-white/100",
 } as const;
 
 type ButtonVariant = keyof typeof buttonVariants;
