@@ -12,10 +12,10 @@ function App() {
 
   return (
     <div
-      className="bg-cover bg-center"
+      className="bg-cover bg-center min-h-screen"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="h-screen flex flex-col max-w-(--app-max-width) mx-auto">
+      <div className="flex flex-col max-w-(--app-max-width) mx-auto min-h-screen">
         <Navigation />
         <Routes>
           {navItems.map((item) => {
