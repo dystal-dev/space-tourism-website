@@ -47,62 +47,117 @@
   --hover-explore-button: 88px solid rgba(255, 255, 255, 0.1);
 }
 
-@layer base {
-  .text-preset-1 {
-    font-family: var(--font-bellefair);
-    font-size: 9rem;
-    line-height: 1.19;
-    letter-spacing: 0;
-  }
+@utility text-preset-1 {
+  font-family: var(--font-bellefair);
+  font-size: 5rem;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
 
-  .text-preset-2 {
-    font-family: var(--font-bellefair);
-    font-size: 6rem;
-    line-height: 1.15;
-    letter-spacing: 0;
-  }
+@utility text-preset-1-desktop {
+  font-size: 9rem;
+}
 
-  .text-preset-3 {
-    font-family: var(--font-bellefair);
-    font-size: 3.5rem;
-    line-height: 1.15;
-    letter-spacing: 0;
-  }
+@utility text-preset-2 {
+  font-family: var(--font-bellefair);
+  font-size: 3.5rem;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
 
-  .text-preset-4 {
-    font-family: var(--font-bellefair);
-    font-size: 2rem;
-    line-height: 1.15;
-    letter-spacing: 0;
-  }
-  .text-preset-5 {
-    font-family: var(--font-barlow-condensed);
-    font-size: 1.75rem;
-    line-height: 1.2;
-    letter-spacing: 0.25rem;
-  }
-  .text-preset-6 {
-    font-family: var(--font-bellefair);
-    font-size: 1.75rem;
-    line-height: 1.15;
-    letter-spacing: 0;
-  }
-  .text-preset-7 {
-    font-family: var(--font-barlow-condensed);
-    font-size: 0.875rem;
-    line-height: 1.2;
-    letter-spacing: 0.125rem;
-  }
-  .text-preset-8 {
-    font-family: var(--font-barlow-condensed);
-    font-size: 1rem;
-    line-height: 1.2;
-    letter-spacing: 0.125rem;
-  }
-  .text-preset-9 {
-    font-family: var(--font-barlow);
-    font-size: 1.125rem;
-    line-height: 1.8;
-    letter-spacing: 0;
-  }
+@utility text-preset-2-tablet {
+  font-size: 5rem;
+}
+
+@utility text-preset-2-desktop {
+  font-size: 6rem;
+}
+
+@utility text-preset-3 {
+  font-family: var(--font-bellefair);
+  font-size: 1.5rem;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+@utility text-preset-3-tablet {
+  font-size: 2.5rem;
+}
+
+@utility text-preset-3-desktop {
+  font-size: 3.5rem;
+}
+
+@utility text-preset-4 {
+  font-family: var(--font-bellefair);
+  font-size: 1.125rem;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+@utility text-preset-4-tablet {
+  font-size: 1.5rem;
+}
+
+@utility text-preset-4-desktop {
+  font-size: 2rem;
+}
+
+@utility text-preset-5 {
+  font-family: var(--font-barlow-condensed);
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0.25rem;
+}
+
+@utility text-preset-5-tablet {
+  font-size: 1.25rem;
+}
+
+@utility text-preset-5-desktop {
+  font-size: 1.75rem;
+}
+
+@utility text-preset-6 {
+  font-family: var(--font-bellefair);
+  font-size: 1rem;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+@utility text-preset-6-desktop {
+  font-size: 1.75rem;
+}
+
+@utility text-preset-7 {
+  font-family: var(--font-barlow-condensed);
+  font-size: 0.875rem;
+  line-height: 1.2;
+  letter-spacing: 0.125rem;
+}
+
+@utility text-preset-8 {
+  font-family: var(--font-barlow-condensed);
+  font-size: 0.875rem;
+  line-height: 1.2;
+  letter-spacing: 0.125rem;
+}
+
+@utility text-preset-8-desktop {
+  font-size: 1rem;
+}
+
+@utility text-preset-9 {
+  font-family: var(--font-barlow);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+
+@utility text-preset-9-tablet {
+  font-size: 1rem;
+}
+
+@utility text-preset-9-desktop {
+  font-size: 1.125rem;
 }
